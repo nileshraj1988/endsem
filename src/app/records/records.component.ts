@@ -16,7 +16,7 @@ records:Detail[];
   }
 
   ngOnInit(): void {
-this.records= Details;
+
     
   }
 
