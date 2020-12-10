@@ -1,0 +1,24 @@
+
+
+  <div class="container">
+
+    <input type="date"  [formControl]="date" style="width: 10rem;"> 
+    <mat-form-field class="example-full-width">
+        <mat-label>Time Of Sleep</mat-label>
+        <input type="email" matInput [formControl]="tos" >
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Wake Up time</mat-label>
+        <input type="email" matInput [formControl]="wut" >
+      </mat-form-field>
+    <select name="cars" id="cars" [formControl]='mood' style="width: 10rem; text-align: center;">
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="best">Best</option>
+      
+      </select><br>
+    
+      
+    
+      <button class="submitButton" (click)="submitData()">Submit</button>
+  </div>
